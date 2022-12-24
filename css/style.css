@@ -1,0 +1,551 @@
+@font-face{
+   src: url(../fonts/brandon-grotesque-light.otf);
+   font-family: brandon-grotesque-light;
+}
+@font-face{
+   src: url(../fonts/Brandon_bld.otf);
+   font-family: Brandon_bld;
+}
+@font-face{
+   src: url(../fonts/Brandon_med.otf);
+   font-family: Brandon_med;
+}
+@font-face{
+   src: url(../fonts/Brandon_reg.otf);
+   font-family: Brandon_reg;
+}
+
+/* common start */
+body{
+    margin: 0;
+    font-family: Brandon_reg;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777777;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* common end */
+
+/* background start */
+.background{
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* background end */
+
+/* header start */
+.container-fluid{
+    padding: 20px 10px;
+}
+.header{
+    background-color: black;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+    /* overflow: hidden; */
+}
+.h-content{
+    padding: 25px 0;
+}
+.navbar-brand{
+    margin-left: 55px;
+    width: 12%;
+}
+.navbar-brand img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.menu ul{
+    margin: 7px 0;
+    padding: 0;
+    /* float: right; */
+}
+.menu ul li{
+    float: left;
+    list-style: none;
+}
+
+.nav-item a{
+    margin-right: 55px;
+    padding: 0 5px 0 3px;
+    font-family: Brandon_med;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition:all 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-item a:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+label{    
+    float: right;
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    
+}
+label i{
+    
+}
+.cheak{
+    /* display: none; */
+}
+#m-btn{
+    line-height: 40px;
+    margin-left: 80px;
+    display: none;
+}
+#canncel{
+    display: none;
+
+}
+/* header end */
+
+/* banner satrt */
+.banner{
+    
+    
+}
+.hidden{   
+    padding: 50px 0;
+    overflow: hidden;
+    text-align: center;
+}
+.b-text{
+    padding: 120px 0;
+}
+
+.b-text h2{
+    font-family: brandon-grotesque-light;
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    
+}
+.b-text h1{
+    margin:0 0 70px;
+    font-family: Brandon_bld;
+    font-size: 66px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+.banner_btn {
+    background: transparent;
+    position: relative;
+    font-family: Brandon_bld;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 15px;
+    z-index: 1;
+    display: block;
+    width: 180px;
+    border-radius: 2px;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 2px solid #fff;
+    color: #fff;
+    margin: 0px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.banner_btn:hover {
+    color: #333;
+}
+
+.banner_btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: -100%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.banner_btn:hover::before {
+    top: 0%;
+}
+
+/* banner end */
+
+/* web development start */
+.web-development{}
+.wrapper2{
+    margin: 0 auto;
+    width: 75%;
+}
+.wb-text{
+    width: 62%;
+    float: left;
+    text-align: left;
+}
+.wb-h1{
+    margin: 0;
+    font-family: brandon-grotesque-light;
+    font-size: 60px;
+    font-weight: 300;
+    color: #222222;
+}
+.wb-h1 span{
+    font-family: Brandon_bld;
+    font-weight: 700;
+}
+.wb-p{
+    margin-top: 30px;
+}
+.wb-img{
+    width: 30%;
+    float: right;
+}
+.wb-img img{
+    width: 100%;
+}
+/* web development end */
+
+/* branding start */
+.branding{
+    background-color: #fafafa;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* branding end */
+
+/* details start */
+#details{
+    overflow: hidden;
+}
+.d-content{
+  
+    
+}
+.s-content{    
+    margin: 15px 0;
+    width: 44%;
+    float: left;
+    overflow: hidden;
+}
+.s-content:nth-child(even){
+    float: right;
+} 
+.s-text{
+    width: 73%;
+    float: right;
+    text-align: left;
+}
+.s-text h2{}
+.s-text p{
+    margin: 0;
+}
+.sc-img{
+    margin-top: 22px;
+    width: 20%;
+    float: left;
+}
+.sc-img img{
+    width: 100%;
+}
+/* details end */
+
+/* clients start */
+#clients{
+    background-color: #fafafa;
+}
+.c-head{}
+.c-head h1{}
+.c-p{
+    margin: 0;
+    font-size: 21px;
+    line-height: 15px;
+}
+.comments{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;    
+}
+.c-1{
+    margin-top: 70px;
+}
+.c-img{
+    width: 43%;
+}
+.c-img img{
+    width: 100%;
+}
+.c-box{
+    margin: 0 75px;
+    background-color: white;
+    border: 1px solid #f3f3f3;
+    position: relative;
+}
+.arrow1{    
+    height: 28px;
+    width: 33px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: -3%;
+    transform: rotate(50deg);
+    border: 1px solid #f3f3f3;
+    border-top: none;
+    border-right: none;
+}
+.arrow2{   
+    height: 28px;
+    width: 33px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    right: -3%;
+    transform: rotate(50deg);
+    border: 1px solid #f3f3f3;
+    border-bottom: none;
+    border-left: none;
+}
+.c-text{    
+    padding: 40px 52px;
+    text-align: left;
+}
+.c-text p{
+    font-size: 26px;
+}
+.t-blue{
+    font-size: 20px;
+    color: #7690c5;
+}
+.c-2{
+
+}
+/* clients end */
+
+/* company start */
+.company{}
+.company-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cp-img{
+    margin: 0 21px;
+}
+.cp-img img{
+    width: 100%;
+}
+/* company end */
+
+/* team satrt */
+#team{
+    background-color: #111111;
+    color: #ebebeb;
+}
+.t-head{}
+.t-head h1{
+    color: white;
+}
+.t-head p{    
+    margin-top: 20px;
+    color: #777777;
+}
+.t-profiles{
+    margin-top: 100px;
+    display: flex;
+}
+.s-profile{  
+    width: 33%;
+}
+.sp-img{
+    margin: 0 auto;
+    width: 77%;
+}
+.sp-img img{
+    width: 100%;
+}
+.sp-head{    
+    line-height: 40px;
+}
+.sp-head h2{    
+    margin: 15px 0 0;
+    font-family: Brandon_bld;
+    font-weight: 700;
+}
+.sp-head p{
+    margin-top: 0;
+}
+.sp-icons{
+    display: flex;
+    justify-content: center;
+}
+.sp-icons i{
+    margin: 0 7px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid;
+    border-radius: 52%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.sp-icons i:hover{  
+    background-color: #ebebeb;
+    color: #111111;
+}
+.cp-p{
+    margin: 0 auto;
+    padding-top: 55px;
+    width: 87%;
+    font-size: 20px;
+}
+/* team end */
+
+/* footer start */
+#footer{
+    background-color: #7690c5;
+    color: white;
+    
+}
+.contacts{
+    padding: 75px 0;
+    overflow: hidden; 
+}
+.f-text{
+    width: 46%;
+    float: left;
+}
+.f-head{
+    
+}
+.f-head h1{
+    color: white;
+}
+.f-head h1 span{
+    padding: 0 7px;   
+}
+.f-head p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.f-contacts{
+    margin: 33px 0;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 38px;
+}
+.f-contacts a{
+    padding: 20px 0;
+    width: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+    text-decoration: none;    
+}
+.f-contacts a:nth-child(even){
+    margin-left: 65px;
+}
+.f-contacts i{
+    font-size: 27px;
+}
+.f-contacts p{
+    margin: 0 0 0 22px;
+    text-align: center;
+}
+.f-form{
+    float: right;
+    width: 40%;    
+}
+.f-form input{
+    margin-top: 20px;
+    padding: 13px 78px 13px 15px;
+    width: 100%;
+    font-family: Brandon_med;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 3px;
+}
+.f-form input:focus{
+    outline: 0;
+}
+#c-box{
+    height: 115px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 14px;
+    font-family: Brandon_med;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    resize: none;
+}
+#c-box:focus{
+    outline: 0;
+}
+.button{
+    margin-top: 15px;
+    padding: 15px 174px 15px 174px;
+    font-family: Brandon_bld;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #7690c5;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.button:hover{
+    color: #7690c5;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;    
+    z-index: -1;
+    background: white;
+    transition: all .3s ease-in-out;
+}
+ .button:hover::before{
+    top: 0%;  
+} 
+.line{
+    border: 1px solid #87a0d2;
+}
+.f-p p{
+    margin: 0;
+    padding: 27px 0;
+    font-family: Brandon_med;
+    font-weight: 500;
+    text-align: center;
+}
+/* footer end */
